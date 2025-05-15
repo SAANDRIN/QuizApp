@@ -1,0 +1,85 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/main"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".PerguntasActivity">
+
+    <LinearLayout
+        android:layout_width="0dp"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="16dp"
+        android:layout_marginTop="90dp"
+        android:layout_marginEnd="16dp"
+        android:background="@color/branco"
+        android:orientation="vertical"
+        android:padding="16dp"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.5"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent">
+
+        <TextView
+            android:id="@+id/textNome"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:padding="8dp"
+            android:text=" Olá, Usuário" />
+
+        <TextView
+            android:id="@+id/textContadorPerguntas"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:background="@color/primaria"
+            android:padding="8dp"
+            android:text="1 pergunta de 4"
+            android:textAlignment="center"
+            android:textColor="@color/branco" />
+
+        <TextView
+            android:id="@+id/textPergunta"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="8dp"
+            android:layout_marginBottom="8dp"
+            android:background="@color/fundo"
+            android:padding="8dp"
+            android:text="Qual foi a duração do primeiro vídeo do YouTube"
+            android:textAlignment="center"
+            android:textSize="20sp" />
+
+        <RadioGroup
+            android:id="@+id/rgRespostas"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent">
+
+            <RadioButton
+                android:id="@+id/rb01"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:text="pergunta 01" />
+
+            <RadioButton
+                android:id="@+id/rb02"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:text="pergunta 02" />
+
+            <RadioButton
+                android:id="@+id/rb03"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginBottom="16dp"
+                android:text="pergunta 03" />
+
+        </RadioGroup>
+
+        <Button
+            android:id="@+id/btnConfirmar"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="CONFIRMAR RESPOSTA" />
+    </LinearLayout>
+</androidx.constraintlayout.widget.ConstraintLayout>

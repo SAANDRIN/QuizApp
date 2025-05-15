@@ -1,0 +1,6 @@
+<resources>
+    <string name="app_name">Quiz App</string>
+    <string name="mensagem_inicial">Bem vindo</string>
+    <string name="text_hint">Digite o seu nome</string>
+    <string name="botao_inicial">INICIAR QUIZ</string>
+</resources>
