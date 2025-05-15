@@ -50,9 +50,8 @@
             android:layout_width="match_parent"
             android:layout_height="48dp"
             android:ems="10"
-            android:hint="@string/text_hint"
-            android:inputType="text"
-            android:text="Kevin Debruyne" />
+            android:hint="Seu Nome"
+            android:inputType="text" />
 
         <Button
             android:id="@+id/btnIniciar"
